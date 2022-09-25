@@ -1,0 +1,11 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
