@@ -1,11 +1,65 @@
+* {
+    color: white;
+}
+
 body, html {
     margin: 0;
     padding: 0;
 }
 
+.full_view {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
 .main_container {
-    text-align: center;
     padding-top: 30px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+    font-family: 'Nabla', cursive;
+    font-size: 100px;
+}
+
+.list {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 25px
+}
+
+ol {
+    counter-reset: number;
+    /*数字をリセット*/
+    list-style-type: none !important;
+    /*数字を一旦消す*/
+    padding: 0;
+    border-top: dashed 3px blue;
+    border-bottom: dashed 3px blue;
+}
+
+ol li {
+    padding: 0.5em 0;
+    position: relative;
+    padding-left: 1.4em;
+    line-height: 1.5em;
+}
+
+ol li:before {
+    counter-increment: number;
+    content: counter(number) ".";
+    position: absolute;
+    left: 0;
+    font-family: 'Bradley Hand', 'Segoe Script', 'Segoe Print', sans-serif;
+    /*手書き風のフォント*/
+    font-size: 1.3em;
+    /*フォントサイズ*/
 }
